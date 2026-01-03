@@ -2,6 +2,7 @@ import { Truck, ShoppingBag, Utensils, Beer, Dessert, Zap, Sun, Moon, Users, Use
 import { Card } from './ui/card';
 import { useLanguage } from '../contexts/LanguageContext';
 
+
 export function Features() {
   const { t } = useLanguage();
 

@@ -38,7 +38,7 @@ export function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center gap-2">
-              <span className="text-2xl">👸</span>
+              <span className="text-2xl">**CP**</span>
               <span className="text-pink-600 dark:text-pink-400">Cake Princess</span>
             </a>
           </div>
