@@ -10,6 +10,8 @@ interface LanguageContextType {
 
 const translations = {
   en: {
+
+   
     // Navigation
     'nav.menu': 'Menu',
     'nav.location': 'Location',
@@ -30,6 +32,7 @@ const translations = {
     'menu.title': 'Our Menu',
     'menu.subtitle': 'Menu may vary by day. Availability confirmed via WhatsApp.',
     'menu.orderNow': 'Order Now on WhatsApp',
+    'menu.orderbutton' : 'Order',
     'menu.monday': 'Monday',
     'menu.tuesday': 'Tuesday',
     'menu.wednesday': 'Wednesday',
@@ -41,9 +44,24 @@ const translations = {
     // Menu Items
     'menu.pizzaMeat': 'Pizza Meat',
     'menu.pizzaChicken': 'Pizza Chicken',
+    'menu.FriedRice' :'Fried Rice and Chicken',
     'menu.eruGarri': 'Eru + Garri / Water Fufu',
     'menu.achu': 'Achu',
     'menu.achuEgusi': 'Achu + Egusi',
+    'menu.ekwang' : 'Ekwang',
+    'menu.kati' : 'Kati Kati and Fufu Corn',
+    'menu.tripe' : 'Tripe sauce and White rice/Dodo',
+    'menu.pouletdj' : 'Poulet DJ',
+    'menu.snail' : 'Snail sauce and dodo/rice',
+    'menu.egusiokro' : 'Egusi okro soup and garri',
+    'menu.kwacoco' : 'Kwa coco and kanda soup',
+    'menu.ndole' : 'Ndole Plaintain',
+    'menu.whitebeans' : 'White beans and rice/dodo',
+    'menu.katifufu' : 'Kati Kati and fufu',
+    'menu.garieru' : 'Garri and Eru',
+    'menu.pepper' : 'Pepper soup  Goat meat',
+    'menu.fish' : 'Backed Fish',
+    'menu.pouletPane' : 'Poulet Pane',
 
     // Ordering Experience
     'ordering.title': 'How to Order',
@@ -146,6 +164,8 @@ const translations = {
     'footer.demoSubtext': 'Built to showcase online ordering and customer visibility',
   },
   fr: {
+
+     
     // Navigation
     'nav.menu': 'Menu',
     'nav.location': 'Localisation',
@@ -166,6 +186,7 @@ const translations = {
     'menu.title': 'Notre Menu',
     'menu.subtitle': 'Le menu peut varier selon les jours. Disponibilité confirmée via WhatsApp.',
     'menu.orderNow': 'Commander maintenant sur WhatsApp',
+    'menu.orderbutton' : 'Commander',
     'menu.monday': 'Lundi',
     'menu.tuesday': 'Mardi',
     'menu.wednesday': 'Mercredi',
@@ -177,10 +198,25 @@ const translations = {
     // Menu Items
     'menu.pizzaMeat': 'Pizza Viande',
     'menu.pizzaChicken': 'Pizza Poulet',
+    'menu.FriedRice' :'Fried Rice avec poulet',
     'menu.eruGarri': 'Eru + Garri / Water Fufu',
-    'menu.achu': 'Achu',
-    'menu.achuEgusi': 'Achu + Egusi',
-
+    'menu.achu': 'Taro',
+    'menu.achuEgusi': 'Taro + Pitache',
+    'menu.egusipudding' : 'Achu with Egusi pudding',
+    'menu.ekwang' : 'Ekwang',
+    'menu.kati' : 'Kati Kati and foufou de mais',
+    'menu.tripe' : 'Tripe sauce and riz blanc/Dodo',
+    'menu.pouletdj' : 'Poulet DJ',
+    'menu.snail' : 'Snail sauce and dodo/riz',
+    'menu.egusiokro' : 'sauce pistache gombo et fufu',
+    'menu.kwacoco' : 'Kwa coco and kanda soup',
+    'menu.ndole' : 'Ndole Plaintain',
+    'menu.whitebeans' : 'haricot blanc et riz/dodo',
+    'menu.katifufu' : 'Kati Kati et fufu',
+    'menu.garieru' : 'water fufu/ gari et Eru',
+    'menu.pepper' : 'Bouillion de chevre',
+    'menu.fish' : 'poison breezee',
+    'menu.pouletPane' : 'Poulet Pane',
     // Ordering Experience
     'ordering.title': 'Comment Commander',
     'ordering.subtitle': 'Processus de commande simple et rapide via WhatsApp',

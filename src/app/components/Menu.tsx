@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Card } from "./ui/card";
 import { useLanguage } from "../contexts/LanguageContext";
-import OderButton from "./OrderButton";
+import OrderButton from "./OrderButton";
 
 interface MenuItem {
   nameKey: string;
@@ -15,161 +15,295 @@ const menuByDay: Record<string, MenuItem[]> = {
     {
       nameKey: "menu.pizzaMeat",
       price: "4,500 FCFA",
-      image: "/images/PizzaMeat.jpg",
+      image: "/images/pizzameat.jpg",
     },
+
     {
       nameKey: "menu.pizzaChicken",
       price: "5,500 FCFA",
-      image: "/images/PizzaChicken.jpg",
+      image: "/images/pizzapoulet.jpg",
+    },
+    {
+      nameKey: "menu.FriedRice",
+      price: "2000FCFA",
+      image: "/images/friedrice.jpg",
     },
     {
       nameKey: "menu.eruGarri",
       price: "1,500 FCFA",
-      image: "/images/FriedRice.jpg",
+      image: "/images/eru1.jpg",
     },
-    { nameKey: "menu.achu", price: "2,000 FCFA", image: "/images/Achu.jpg" },
+    {
+      nameKey: "menu.achu",
+      price: "2,000 FCFA",
+      image: "/images/achu.jpg",
+    },
     {
       nameKey: "menu.achuEgusi",
       price: "2,500 FCFA",
-      image: "/images/AchuEgusi.jpg",
+      image: "/images/taro.jpg",
+    },
+    {
+      nameKey: "menu.kati",
+      price: "2500FCFA",
+      image: "/images/kati.jpg",
+    },
+    {
+      nameKey: "menu.tripe",
+      price: "3000FCFA",
+      image: "/images/tripe.jpg",
     },
   ],
   Tuesday: [
     {
       nameKey: "menu.pizzaMeat",
       price: "4,500 FCFA",
-      image: "/images/PizzaMeat.jpg",
+      image: "/images/pizzameat.jpg",
     },
     {
       nameKey: "menu.pizzaChicken",
       price: "5,500 FCFA",
-      image: "/images/PizzaChicken.jpg",
+      image: "/images/pizzapoulet.jpg",
     },
     {
-      nameKey: "menu.eruGarri",
-      price: "1,500 FCFA",
-      image: "/images/EruGarri.jpg",
+      nameKey: "menu.FriedRice",
+      price: "2000FCFA",
+      image: "/images/friedrice.jpg",
     },
-    { nameKey: "menu.achu", price: "2,000 FCFA", image: "/images/Achu.jpg" },
+    {
+      nameKey: "menu.achu",
+      price: "2,000 FCFA",
+      image: "/images/achu.jpg",
+    },
     {
       nameKey: "menu.achuEgusi",
       price: "2,500 FCFA",
-      image: "/images/AchuEgusi.jpg",
+      image: "/images/taro.jpg",
+    },
+    {
+      nameKey: "menu.ekwang",
+      price: "3000FCFA",
+      image: "/images/ekwang.jpg",
+    },
+    {
+      nameKey: "menu.pouletdj",
+      price: "2500FCFA",
+      image: "/images/pouletdg.jpg",
+    },
+    {
+      nameKey: "menu.snail",
+      price: "3000FCFA",
+      image: "/images/snail.jpg",
+    },
+    {
+      nameKey: "menu.eruGarri",
+      price: "1500FCFA",
+      image: "/images/eru1.jpg",
     },
   ],
   Wednesday: [
     {
       nameKey: "menu.pizzaMeat",
       price: "4,500 FCFA",
-      image: "/images/PizzaMeat.jpg",
+      image: "/images/pizzameat.jpg",
     },
     {
       nameKey: "menu.pizzaChicken",
       price: "5,500 FCFA",
-      image: "/images/PizzaChicken.jpg",
+      image: "/images/pizzapoulet.jpg",
     },
     {
-      nameKey: "menu.eruGarri",
-      price: "1,500 FCFA",
-      image: "/images/EruGarri.jpg",
+      nameKey: "menu.FriedRice",
+      price: "2000FCFA",
+      image: "/images/friedrice.jpg",
     },
-    { nameKey: "menu.achu", price: "2,000 FCFA", image: "/images/Achu.jpg" },
     {
-      nameKey: "menu.achuEgusi",
-      price: "2,500 FCFA",
-      image: "/images/AchuEgusi.jpg",
+      nameKey: "menu.egusiokro",
+      price: "2000FCFA",
+      image: "/images/egusisoup.jpg",
+    },
+    {
+      nameKey: "menu.kwacoco",
+      price: "2500FCFA",
+      image: "/images/kwa.jpg",
+    },
+    {
+      nameKey: "menu.ndole",
+      price: "2500FCFA",
+      image: "/images/ndole.jpg",
+    },
+    {
+      nameKey: "menu.whitebeans",
+      price: "2000FCFA",
+      image: "/images/rice.jpg",
     },
   ],
   Thursday: [
     {
       nameKey: "menu.pizzaMeat",
       price: "4,500 FCFA",
-      image: "/images/PizzaMeat.jpg",
+      image: "/images/pizzameat.jpg",
     },
     {
       nameKey: "menu.pizzaChicken",
       price: "5,500 FCFA",
-      image: "/images/PizzaChicken.jpg",
+      image: "/images/pizzapoulet.jpg",
+    },
+    {
+      nameKey: "menu.FriedRice",
+      price: "2000FCFA",
+      image: "/images/friedrice.jpg",
+    },
+    {
+      nameKey: "menu.kati",
+      price: "2500fcfa",
+      image: "/images/kati.jpg",
+    },
+    {
+      nameKey: "menu.pouletdj",
+      price: "2500FCFA",
+      image: "/images/pouletdg2.jpg",
+    },
+    {
+      nameKey: "menu.tripe",
+      price: "3000FCFA",
+      image: "/images/tripe.jpg",
     },
     {
       nameKey: "menu.eruGarri",
-      price: "1,500 FCFA",
-      image: "/images/EruGarri.jpg",
-    },
-    { nameKey: "menu.achu", price: "2,000 FCFA", image: "/images/Achu.jpg" },
-    {
-      nameKey: "menu.achuEgusi",
-      price: "2,500 FCFA",
-      image: "/images/AchuEgusi.jpg",
+      price: "2500FCFA",
+      image: "/images/eru1.jpg",
     },
   ],
   Friday: [
     {
       nameKey: "menu.pizzaMeat",
       price: "4,500 FCFA",
-      image: "/images/PizzaMeat.jpg",
+      image: "/images/pizzameat.jpg",
     },
     {
       nameKey: "menu.pizzaChicken",
       price: "5,500 FCFA",
-      image: "/images/PizzaChicken.jpg",
+      image: "/images/pizzapoulet.jpg",
+    },
+    {
+      nameKey: "menu.FriedRice",
+      price: "2000FCFA",
+      image: "/images/friedrice.jpg",
     },
     {
       nameKey: "menu.eruGarri",
-      price: "1,500 FCFA",
-      image: "/images/EruGarri.jpg",
+      price: "1500 FCFA",
+      image: "/images/eru1.jpg",
     },
-    { nameKey: "menu.achu", price: "2,000 FCFA", image: "/images/Achu.jpg" },
+    {
+      nameKey: "menu.achu",
+      price: "200 FCFA",
+      image: "/images/achu.jpg",
+    },
     {
       nameKey: "menu.achuEgusi",
       price: "2,500 FCFA",
-      image: "/images/AchuEgusi.jpg",
+      image: "/images/taro.jpg",
+    },
+    {
+      nameKey: "menu.ekwang",
+      price: "3000FCFA",
+      image: "/images/ekwang.jpg",
+    },
+    {
+      nameKey: "menu.whitebeans",
+      price: "2000FCA",
+      image: "/images/rice.jpg",
     },
   ],
   Saturday: [
     {
       nameKey: "menu.pizzaMeat",
       price: "4,500 FCFA",
-      image: "/images/PizzaMeat.jpg",
+      image: "/images/pizzameat.jpg",
     },
     {
       nameKey: "menu.pizzaChicken",
       price: "5,500 FCFA",
-      image: "/images/PizzaChicken.jpg",
+      image: "/images/pizzapoulet.jpg",
+    },
+    {
+      nameKey: "menu.FriedRice",
+      price: "2000FCFA",
+      image: "/images/friedrice.jpg",
+    },
+    {
+      nameKey: "menu.snail",
+      price: "3000FCFA",
+      image: "/images/snail.jpg",
     },
     {
       nameKey: "menu.eruGarri",
       price: "1,500 FCFA",
-      image: "/images/EruGarri.jpg",
+      image: "/images/eru1.jpg",
     },
-    { nameKey: "menu.achu", price: "2,000 FCFA", image: "/images/Achu.jpg" },
+    {
+      nameKey: "menu.achu",
+      price: "2,000 FCFA",
+      image: "/images/achu.jpg",
+    },
     {
       nameKey: "menu.achuEgusi",
       price: "2,500 FCFA",
-      image: "/images/AchuEgusi.jpg",
+      image: "/images/taro.jpg",
+    },
+    {
+      nameKey: "menu.ndole,",
+      price: "2500FCFA",
+      image: "/images/ndole.jpg",
     },
   ],
   Sunday: [
     {
       nameKey: "menu.pizzaMeat",
       price: "4,500 FCFA",
-      image: "/images/PizzaMeat.jpg",
+      image: "/images/pizzameat.jpg",
     },
     {
       nameKey: "menu.pizzaChicken",
       price: "5,500 FCFA",
-      image: "/images/PizzaChicken.jpg",
+      image: "/images/pizzapoulet.jpg",
     },
     {
       nameKey: "menu.eruGarri",
       price: "1,500 FCFA",
-      image: "/images/EruGarri.jpg",
+      image: "/images/eru.jpg",
     },
-    { nameKey: "menu.achu", price: "2,000 FCFA", image: "/images/Achu.jpg" },
+    {
+      nameKey: "menu.achu",
+      price: "2,000 FCFA",
+      image: "/images/achu.jpg",
+    },
     {
       nameKey: "menu.achuEgusi",
       price: "2,500 FCFA",
-      image: "/images/AchuEgusi.jpg",
+      image: "/images/taro.jpg",
+    },
+    {
+      nameKey: "menu.FriedRice",
+      price: "2000FCFA",
+      image: "/images/friedrice1.jpg",
+    },
+    {
+      nameKey: "menu.fish",
+      price: "3500FCFA",
+      image: "/images/fish.jpg",
+    },
+    {
+      nameKey: "menu.pouletPane",
+      price: "3500FCFA",
+      image: "/images/pane.jpg",
+    },
+    {
+      nameKey: "menu.pepper",
+      price: "3000FCFA",
+      image: "/images/goat.jpg",
     },
   ],
 };
@@ -220,46 +354,35 @@ export function Menu() {
                 {menuByDay[day].map((item, index) => (
                   <Card
                     key={index}
-                    className="p-6 hover:shadow-lg transition-shadow dark:bg-gray-700 dark:border-gray-600"
-                    id="HereIsMenu"
-                    style={{
-                      backgroundImage: `url(${item.image})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      minHeight: "220px",
-                    }}
+                    className="relative overflow-hidden h-64 group dark:bg-gray-700"
                   >
-                    <div className="flex justify-between items-start">
-                      <div className="flex-1">
-                        <h3 className="mb-2 dark:text-white">
-                          {t(item.nameKey)}
-                        </h3>
-                        <p className="text-pink-600 dark:text-pink-400">
-                          {item.price}
-                        </p>
-                        <OderButton />
-                      </div>
+                    {/* Image */}
+                    <img
+                      src={item.image}
+                      alt={t(item.nameKey)}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-black/50" />
+
+                    {/* Content */}
+                    <div className="relative z-10 h-full flex flex-col items-start justify-end p-4">
+                      <h3 className="text-white text-lg font-semibold">
+                        {t(item.nameKey)}
+                      </h3>
+
+                      <p className="text-pink-300 font-medium">{item.price}</p>
+                      <OrderButton dishName={t(item.nameKey)} />
+
                     </div>
+                    
                   </Card>
                 ))}
               </div>
             </TabsContent>
           ))}
         </Tabs>
-
-        <div className="mt-12 text-center">
-          <a
-            href={`https://wa.me/670899104?text=${encodeURIComponent(
-              whatsappMessage
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
-          >
-            <span className="text-xl">🟢</span>
-            {t("menu.orderNow")}
-          </a>
-        </div>
       </div>
     </section>
   );

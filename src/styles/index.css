@@ -5,26 +5,27 @@
 
 
 
-.OrderButton{
-    background-color: green;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out;
-    }
+.orderbutton {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 5px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
 
-    .OrderButton:Hover{
-        background-color: red;
-    }
-    .OrderButton:active{
-        transform: translateY(2px);
-    }
+.orderbutton:hover {
+  background-color: red;
+}
+
+.orderbutton:active {
+  transform: translateY(2px);
+}
 
 
