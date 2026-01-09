@@ -66,14 +66,13 @@ export function Atmosphere() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1567596045677-50ea5cdf2ea7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwdHJhZGl0aW9uYWwlMjBmb29kfGVufDF8fHx8MTc2NzE2MzAwN3ww&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Traditional African dishes"
+                src="images/atm.jpg"
                 className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1563245738-9169ff58eccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaXp6YSUyMHJlc3RhdXJhbnR8ZW58MXx8fHwxNzY3MDg0NjQyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="images/atm1.jpg"
                 alt="Pizza at Cake Princess"
                 className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
               />

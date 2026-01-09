@@ -254,7 +254,7 @@ const menuByDay: Record<string, MenuItem[]> = {
       image: "/images/taro.jpg",
     },
     {
-      nameKey: "menu.ndole,",
+      nameKey: "menu.ndole",
       price: "2500FCFA",
       image: "/images/ndole.jpg",
     },

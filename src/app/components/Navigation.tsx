@@ -38,8 +38,8 @@ export function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center gap-2">
-              <span className="text-2xl">**CP**</span>
-              <span className="text-pink-600 dark:text-pink-400">Cake Princess</span>
+              <span className="text-2xl"></span>
+              <span className="text-pink-600 dark:text-pink-400">CakePrincessResto</span>
             </a>
           </div>
 
@@ -81,15 +81,7 @@ export function Navigation() {
               <Phone className="w-4 h-4" />
               {t('nav.callNow')}
             </a>
-            <a
-              href={`https://wa.me/670899104?text=${encodeURIComponent(whatsappMessage)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
-            >
-              <span>🟢</span>
-              {t('nav.orderWhatsApp')}
-            </a>
+           
           </div>
 
           {/* Mobile Menu Button */}

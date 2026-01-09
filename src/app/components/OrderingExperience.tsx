@@ -54,14 +54,7 @@ export function OrderingExperience() {
           })}
         </div>
 
-        <Card className="p-8 bg-gray-50 dark:bg-gray-800 border-2 border-dashed border-gray-300 dark:border-gray-600">
-          <h3 className="mb-4 text-center dark:text-white">{t('ordering.messageTitle')}</h3>
-          <div className="bg-white dark:bg-gray-700 p-6 rounded-lg border border-gray-200 dark:border-gray-600 max-w-md mx-auto">
-            <p className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-line font-mono">
-              {t('ordering.messageTemplate')}
-            </p>
-          </div>
-        </Card>
+        
       </div>
     </section>
   );

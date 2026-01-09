@@ -1,20 +1,26 @@
-import { MapPin, Phone, Clock } from 'lucide-react';
-import { Card } from './ui/card';
-import { useLanguage } from '../contexts/LanguageContext';
+import { MapPin, Phone, Clock } from "lucide-react";
+import { Card } from "./ui/card";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export function Location() {
   const { language, t } = useLanguage();
 
-  const whatsappMessage = language === 'en' 
-    ? 'Hello Cake Princess,\n\nI would like to order:\nDish(s): ___\nQuantity: ___\nLocation: ___\n\nThank you.'
-    : 'Bonjour Cake Princess,\n\nJe voudrais commander :\nPlat(s) : ___\nQuantité : ___\nLocalisation : ___\n\nMerci.';
+  const whatsappMessage =
+    language === "en"
+      ? "Hello Cake Princess,\n\nI would like to order:\nDish(s): ___\nQuantity: ___\nLocation: ___\n\nThank you."
+      : "Bonjour Cake Princess,\n\nJe voudrais commander :\nPlat(s) : ___\nQuantité : ___\nLocalisation : ___\n\nMerci.";
 
   return (
-    <section id="location" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+    <section
+      id="location"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900"
+    >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="mb-4 dark:text-white">{t('location.title')}</h2>
-          <p className="text-gray-600 dark:text-gray-300">{t('location.subtitle')}</p>
+          <h2 className="mb-4 dark:text-white">{t("location.title")}</h2>
+          <p className="text-gray-600 dark:text-gray-300">
+            {t("location.subtitle")}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -26,21 +32,23 @@ export function Location() {
                   <MapPin className="w-6 h-6 text-pink-600 dark:text-pink-400" />
                 </div>
                 <div>
-                  <h3 className="mb-2 dark:text-white">{t('location.addressTitle')}</h3>
+                  <h3 className="mb-2 dark:text-white">
+                    {t("location.addressTitle")}
+                  </h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    {t('location.address')}
+                    {t("location.address")}
                     <br />
-                    {t('location.city')}
+                    {t("location.city")}
                     <br />
-                    {t('location.country')}
+                    {t("location.country")}
                   </p>
                   <a
-                    href="https://maps.google.com/?q=Jouvence+Yaounde+Jerry+Residence"
+                    href="https://maps.app.goo.gl/Qcmgaao7eUrmdB4U8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 mt-3 text-pink-600 dark:text-pink-400 hover:text-pink-700 dark:hover:text-pink-300 transition-colors"
                   >
-                    {t('location.getDirections')} →
+                    {t("location.getDirections")} →
                   </a>
                 </div>
               </div>
@@ -52,19 +60,26 @@ export function Location() {
                   <Phone className="w-6 h-6 text-pink-600 dark:text-pink-400" />
                 </div>
                 <div>
-                  <h3 className="mb-2 dark:text-white">{t('location.contactTitle')}</h3>
+                  <h3 className="mb-2 dark:text-white">
+                    {t("location.contactTitle")}
+                  </h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    <a href="tel:+237670899104" className="hover:text-pink-600 dark:hover:text-pink-400 transition-colors">
+                    <a
+                      href="tel:+237670899104"
+                      className="hover:text-pink-600 dark:hover:text-pink-400 transition-colors"
+                    >
                       +237 670 899 104
                     </a>
                   </p>
                   <a
-                    href={`https://wa.me/670899104?text=${encodeURIComponent(whatsappMessage)}`}
+                    href={`https://wa.me/670899104?text=${encodeURIComponent(
+                      whatsappMessage
+                    )}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 mt-3 text-green-600 hover:text-green-700 transition-colors"
                   >
-                    <span>🟢</span> {t('location.whatsappUs')}
+                    <span>🟢</span> {t("location.whatsappUs")}
                   </a>
                 </div>
               </div>
@@ -76,11 +91,13 @@ export function Location() {
                   <Clock className="w-6 h-6 text-pink-600 dark:text-pink-400" />
                 </div>
                 <div>
-                  <h3 className="mb-2 dark:text-white">{t('location.hoursTitle')}</h3>
+                  <h3 className="mb-2 dark:text-white">
+                    {t("location.hoursTitle")}
+                  </h3>
                   <div className="space-y-1 text-gray-600 dark:text-gray-300">
                     <div className="flex justify-between gap-8">
-                      <span>{t('location.hoursText')}</span>
-                      <span>{t('location.hoursTime')}</span>
+                      <span>{t("location.hoursText")}</span>
+                      <span>{t("location.hoursTime")}</span>
                     </div>
                   </div>
                 </div>
@@ -88,20 +105,7 @@ export function Location() {
             </Card>
           </div>
 
-          {/* Map */}
-          <div className="rounded-lg overflow-hidden shadow-lg h-full min-h-[400px]">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.7326!2d11.5167!3d3.8667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwNTInMDAuMSJOIDExwrAzMScwMC4xIkU!5e0!3m2!1sen!2s!4v1234567890"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Cake Princess Location"
-              className="w-full h-full min-h-[400px]"
-            ></iframe>
-          </div>
+          
         </div>
       </div>
     </section>
