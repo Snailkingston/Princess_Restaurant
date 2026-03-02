@@ -234,7 +234,7 @@ const translations = {
     // Features
     'features.servicesTitle': 'Nos Services',
     'features.delivery': 'Livraison',
-    'features.takeaway': 'À emporter',
+    'features.takeaway': 'À emporterr',
     'features.dineIn': 'Sur place',
     'features.highlightsTitle': 'Points forts et Spécialités',
     'features.beerSelection': 'Excellente sélection de bières',
