@@ -238,7 +238,7 @@ const translations = {
     'features.dineIn': 'Sur place',
     'features.highlightsTitle': 'Points forts et Spécialités',
     'features.beerSelection': 'Excellente sélection de bières',
-    'features.desserts': 'Excellents desserts',
+    'features.desserts': 'Excellents dessert',
     'features.quickBites': 'Repas rapides disponibles',
     'features.lunch': 'Idéal pour le déjeuner',
     'features.dinner': 'Parfait pour le dîner',
