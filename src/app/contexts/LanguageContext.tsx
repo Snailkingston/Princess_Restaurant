@@ -241,7 +241,7 @@ const translations = {
     'features.desserts': 'Excellents dessert',
     'features.quickBites': 'Repas rapides disponibles',
     'features.lunch': 'Idéal pour le déjeuner',
-    'features.dinner': 'Parfait pour le dîner',
+    'features.dinner': 'Parfait pour le dînerr',
     'features.popularTitle': 'Populaire pour',
     'features.lunchTime': 'Déjeuner',
     'features.dinnerTime': 'Dîner',
