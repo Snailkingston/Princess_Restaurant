@@ -228,7 +228,7 @@ const translations = {
     'ordering.step3Desc': 'Spécifiez votre plat, quantité et lieu de livraison',
     'ordering.step4Title': 'Recevoir la confirmation',
     'ordering.step4Desc': 'Obtenez la confirmation de votre commande et le délai de livraison',
-    'ordering.messageTitle': 'Message WhatsApp prérempli',
+    'ordering.messageTitle': 'Message WhatsApp',
     'ordering.messageTemplate': 'Bonjour Cake Princess,\n\nJe voudrais commander :\nPlat(s) : ___\nQuantité : ___\nLocalisation : ___\n\nMerci.',
 
     // Features
