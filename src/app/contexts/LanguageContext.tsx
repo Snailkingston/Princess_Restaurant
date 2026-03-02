@@ -233,7 +233,7 @@ const translations = {
 
     // Features
     'features.servicesTitle': 'Nos Services',
-    'features.delivery': 'Livraison',
+    'features.delivery': 'Livraisons',
     'features.takeaway': 'À emporterr',
     'features.dineIn': 'Sur place',
     'features.highlightsTitle': 'Points forts et Spécialités',
